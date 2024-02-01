@@ -1,6 +1,21 @@
 <p>my-comp2 works!</p>
 
-{{string1}}
-{{list2}}
-{{list3}}
+{{string1}}<br>
+{{string2}}<br>
+
+<!-- cant use in keyword inside ngfor -->
+<ul>
+    <li *ngFor="let item of list3; let i=index">{{ i }}: {{ item }}</li>
+</ul>
+<!-- can't use ng for outside the element can be used inside only-->
+<!-- *ngFor="let item of list3 {{ item }}" -->
+<ul>
+    <li *ngFor="let item of list3">{{ item }}</li>
+</ul>
+  
+<!-- THis is object using for of -->
+{{object.key1}}
+<ul>
+    <li *ngFor="let item in object|keyvalue">{{item.key}} {{item.value}}</li>
+</ul>
 
