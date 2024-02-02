@@ -1,14 +1,19 @@
 THis is app level |Here I am going to call the components
 
 <div class="added">
-    <div>"Here I am adding NUmber to variable which is( {{listOfnumbers}} ) declared in app level all these is written in app.html"</div>
+    <div>"Here I am adding NUmber to variable which is {{listOfnumbers}} declared in app level all these is written in app.html"</div>
     <div>
-        <span>NUmber to add</span>
-        <input>
-        <button>ADD IT!</button>
+        <label for="number">NUmber to add</label>
+
+        <!-- Mehtod 1 preferred -->
+        <input name="number" [(ngModel)]="textNumber">
+
+        <!-- Mehtod 2 alternate -->
+        <!-- <input name="number" [value]="textNumber" (change)="handleChange($event)"> -->
+        <button (click)="onNumberAdd()">ADD IT!</button>
     </div>
     
 </div>
 
 <app-adder-logic></app-adder-logic>
-<app-my-comp2 string1="ras" string2="listOfnumbers" [list3]="listOfnumbers"/>
+<!-- <app-my-comp2 string1="ras" string2="listOfnumbers" [list3]="listOfnumbers"/> -->
