@@ -1,8 +1,8 @@
 <div class="added2">
-    <div>"Here I am adding NUmber to variable which is :  : declared in app level all these is written in seperate component file"</div>
+    <div>"Here I am adding NUmber to variable which is : {{list3}} : declared in app level all these is written in seperate component file"</div>
     <div>
         <span>NUmber to add</span>
-        <input>
+        <input name="number" [(ngModel)]="textNumber">
         <button (click)="handleClick()">ADD IT!</button>
     </div>
     

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-adder-logic',
@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AdderLogicComponent {
 
-  a=2;
-  b="some text"
+  @Input() list3 : any;
+  textNumber :any=''
+
   handleClick(){
-    console.log(this)
+    console.log("fn called current value of thisnno.",this.textNumber)
+    // this.listOfnumbers[this.listOfnumbers.length]=this.textNumber
+    this.list3.push(this.textNumber)
+    // this.normalNo=this.textNumber
+    console.log(this.list3)
+    this.textNumber=''  
   }
 }
