@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AdderLogicComponent {
 
+  a=2;
+  b="some text"
+  handleClick(){
+    console.log(this)
+  }
 }

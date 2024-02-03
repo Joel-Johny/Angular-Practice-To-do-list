@@ -1,7 +1,9 @@
-{{string1}}<br>
-{{string2}}<br>
+<!-- {{string1}}<br>
+{{string2}}<br> -->
 
 <!-- cant use in keyword inside ngfor -->
+
+<h4>Received the list from parent app component {{list3}} and this is number {{normalNo}} and below we have the index-value representation</h4>
 <ul>
     <li *ngFor="let item of list3; let i=index">{{ i }}: {{ item }}</li>
 </ul>
@@ -9,8 +11,8 @@
 <!-- *ngFor="let item of list3 {{ item }}" -->
 
 <!-- THis is object using for of -->
-{{object.key1}}
+<!-- {{object.key1}}
 <ul>
     <li *ngFor="let item of object|keyvalue">{{item.key}} = :: = {{item.value}}</li>
-</ul>
+</ul> -->
 

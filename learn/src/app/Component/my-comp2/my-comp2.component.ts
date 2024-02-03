@@ -11,6 +11,7 @@ export class MyComp2Component {
   @Input() string1: any;
   @Input() string2: any;
   @Input() list3: any;
+  @Input() normalNo: any;
   
   object = {key1:1,key2:2,key3:4}
 }
