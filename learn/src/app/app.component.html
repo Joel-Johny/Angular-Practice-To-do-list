@@ -12,7 +12,9 @@ THis is app level |Here I am going to call the components
         <!-- <input name="number" [value]="textNumber" (change)="handleChange($event)"> -->
         <button (click)="onNumberAdd()">ADD IT!</button>
     </div>
-    
+    <ul>
+        <li *ngFor="let item of listOfnumbers; let i=index">{{ i }}: {{ item }}</li>
+    </ul>
 </div>
 <app-adder-logic [list3]="listOfnumbers" />
 

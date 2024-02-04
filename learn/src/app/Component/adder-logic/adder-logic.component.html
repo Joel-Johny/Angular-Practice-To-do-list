@@ -5,5 +5,7 @@
         <input name="number" [(ngModel)]="textNumber">
         <button (click)="handleClick()">ADD IT!</button>
     </div>
-    
+    <ul>
+        <li *ngFor="let item of list3; let i=index">{{ i }}: {{ item }}</li>
+    </ul>
 </div>

@@ -13,7 +13,7 @@ export class AppComponent {
   onNumberAdd(){
     console.log("fn called current value of thisnno.",this.textNumber)
     // this.listOfnumbers[this.listOfnumbers.length]=this.textNumber
-    this.listOfnumbers.push(this.textNumber)
+    this.listOfnumbers=[...this.listOfnumbers,this.textNumber]
     // this.normalNo=this.textNumber
     console.log(this.listOfnumbers)
     this.textNumber=''
