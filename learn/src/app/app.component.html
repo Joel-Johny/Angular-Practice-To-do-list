@@ -1,22 +1,49 @@
 THis is app level |Here I am going to call the components
 
-<div class="added">
-    <div>"Here I am adding NUmber to variable which is :- {{listOfnumbers}} declared in app level all these is written in app.html"</div>
-    <div>
-        <label for="number">NUmber to add</label>
+<!-- <div class="added"> -->
+    <!-- <div>"Here I am adding NUmber to variable which is :- {{listOfnumbers}} declared in app level all these is written in app.html"</div> -->
+    <!-- <div> -->
+        <!-- <label for="number">NUmber to add</label> -->
 
         <!-- Mehtod 1 preferred -->
-        <input name="number" [(ngModel)]="textNumber">
+        <!-- <input name="number" [(ngModel)]="textNumber"> -->
 
         <!-- Mehtod 2 alternate -->
         <!-- <input name="number" [value]="textNumber" (change)="handleChange($event)"> -->
-        <button (click)="onNumberAdd()">ADD IT!</button>
-    </div>
-    <ul>
-        <li *ngFor="let item of listOfnumbers; let i=index">{{ i }}: {{ item }}</li>
-    </ul>
-</div>
-<app-adder-logic [list3]="listOfnumbers" />
-<app-custom-evn-demo (evnEmit)="handleCusEvt($event)"/>
+        <!-- <button (click)="onNumberAdd()">ADD IT!</button> -->
+    <!-- </div> -->
+    <!-- <ul> -->
+        <!-- <li *ngFor="let item of listOfnumbers; let i=index">{{ i }}: {{ item }}</li> -->
+    <!-- </ul> -->
+<!-- </div> -->
+<!-- <app-adder-logic [list3]="listOfnumbers" /> -->
+<!-- <app-custom-evn-demo (evnEmit)="handleCusEvt($event)"/> -->
 
-<app-my-comp2 string1="ras" string2="listOfnumbers" [list3]="listOfnumbers" />
+<!-- <app-my-comp2 string1="ras" string2="listOfnumbers" [list3]="listOfnumbers" /> -->
+
+
+<!-- To complete task 7 commented above code -->
+<nav>
+    <ul>
+        <li>
+            <a routerLink="/page2">page2 : Child Comp </a>
+        </li>
+
+        <li>
+            <a routerLink="/page3">page3 : Custom Evnt</a>
+        </li>
+
+        <li>
+            <a routerLink="/page4">page4 : Display Data</a>
+        </li>
+
+        
+        <li>
+            <a routerLink="/inf">page4 : Infinte test comp calling itself</a>
+        </li>
+    </ul>
+</nav>
+<h1>Hello World</h1>
+<router-outlet></router-outlet>
+
+
