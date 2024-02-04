@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-  listOfnumbers =[11,2,4,52,5]
+  listOfnumbers =[1,2,5]
   // normalNo='0'
   textNumber :any=''
   onNumberAdd(){
@@ -20,6 +20,14 @@ export class AppComponent {
     
   }
 
+  handleCusEvt(data : any){
+    console.log("data received from child appending to list",data)
+    this.listOfnumbers=[...this.listOfnumbers,data]
+
+  }
+  
+
+  // if we are not using ngModel and using [value] we have to use onchange event similar to react
   handleChange(event : any){
     console.log("changed")
     // this.textNumber=event.target.value

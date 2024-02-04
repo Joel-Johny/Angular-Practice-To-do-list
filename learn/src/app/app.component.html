@@ -17,5 +17,6 @@ THis is app level |Here I am going to call the components
     </ul>
 </div>
 <app-adder-logic [list3]="listOfnumbers" />
+<app-custom-evn-demo (evnEmit)="handleCusEvt($event)"/>
 
 <app-my-comp2 string1="ras" string2="listOfnumbers" [list3]="listOfnumbers" />
