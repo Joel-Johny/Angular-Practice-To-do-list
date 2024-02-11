@@ -29,7 +29,7 @@ THis is app level |Here I am going to call the components
 
         <!-- app.component.html -->
     <li>
-        <a [routerLink]="['/page2', listOfnumbers.join(',')]">page2 : Child Comp </a>
+        <a routerLink="/page2">page2 : Child Comp </a>
     </li>
   
           
@@ -39,7 +39,7 @@ THis is app level |Here I am going to call the components
         </li>
 
         <li>
-            <a [routerLink]="['/page4', listOfnumbers.join(',')]">page4 : Display Data</a>
+            <a [routerLink]="['/page4', listOfnumbers.join(',')]">page4 : Display Data variable at app level via URL</a>
         </li>
 
         

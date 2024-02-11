@@ -22,5 +22,6 @@ export class MyComp2Component {
 
   // @Input() list3 : any;
   listOfnumbers :any=[]
+  someString="Hemlo WOrld"
   object = {key1:1,key2:2,key3:4}
 }

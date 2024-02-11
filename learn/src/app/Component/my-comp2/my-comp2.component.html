@@ -3,10 +3,16 @@
 
 <!-- cant use in keyword inside ngfor -->
 
-<h4>Received the list from parent app component {{listOfnumbers}} and this is number  and below we have the index-value representation</h4>
+<h4>Received the list from parent app component {{listOfnumbers}} and this is accessed via url  and below we have the index-value representation</h4>
 <ul>
     <li *ngFor="let item of listOfnumbers; let i=index">{{ i }}: {{ item }}</li>
 </ul>
+<h4>Examples of pipes in templates</h4>
+
+{{someString | lowercase}} <br>
+{{someString | titlecase}} <br>
+{{someString | titlecase | slice:0:2}} <br>
+{{object | json}}
 <!-- can't use ng for outside the element can be used inside only-->
 <!-- *ngFor="let item of list3 {{ item }}" -->
 
