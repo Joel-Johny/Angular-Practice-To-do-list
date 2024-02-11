@@ -9,10 +9,10 @@ import { AdderLogicComponent } from './Component/adder-logic/adder-logic.compone
 import { CustomEvnDemoComponent } from './Component/custom-evn-demo/custom-evn-demo.component'
 import { InfTestComponent } from './Component/inf-test/inf-test.component';
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  // { path: '', component: AppComponent },
   { path: 'page2', component: AdderLogicComponent },
   { path: 'page3', component: CustomEvnDemoComponent },
-  { path: 'page4', component: MyComp2Component },
+  { path: 'page4/:listOfnumbers', component: MyComp2Component },
   { path: 'inf', component: InfTestComponent },
   // Add more routes as needed
 ];

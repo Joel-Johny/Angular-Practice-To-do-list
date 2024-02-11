@@ -1,11 +1,11 @@
 <div class="added2">
-    <div>"Here I am adding NUmber to variable which is : {{list3}} : declared in app level all these is written in seperate component file"</div>
+    <div>"Here I am adding NUmber to variable which is : {{listOfnumbers}} : declared in app level all these is written in seperate component file"</div>
     <div>
         <span>NUmber to add</span>
         <input name="number" [(ngModel)]="textNumber">
         <button (click)="handleClick()">ADD IT!</button>
     </div>
     <ul>
-        <li *ngFor="let item of list3; let i=index">{{ i }}: {{ item }}</li>
+        <li *ngFor="let item of listOfnumbers; let i=index">{{ i }}: {{ item }}</li>
     </ul>
 </div>

@@ -3,9 +3,9 @@
 
 <!-- cant use in keyword inside ngfor -->
 
-<h4>Received the list from parent app component {{list3}} and this is number {{normalNo}} and below we have the index-value representation</h4>
+<h4>Received the list from parent app component {{listOfnumbers}} and this is number  and below we have the index-value representation</h4>
 <ul>
-    <li *ngFor="let item of list3; let i=index">{{ i }}: {{ item }}</li>
+    <li *ngFor="let item of listOfnumbers; let i=index">{{ i }}: {{ item }}</li>
 </ul>
 <!-- can't use ng for outside the element can be used inside only-->
 <!-- *ngFor="let item of list3 {{ item }}" -->
