@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,6 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   listOfnumbers =[1,2,5]
-  // normalNo='0'
   textNumber :any=''
   onNumberAdd(){
     console.log("fn called current value of thisnno.",this.textNumber)
