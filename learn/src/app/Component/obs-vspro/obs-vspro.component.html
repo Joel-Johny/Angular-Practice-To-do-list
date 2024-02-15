@@ -1,0 +1,44 @@
+<h2>Difference between Observable and Promise</h2>
+<em>Observables emit multiple values over time with features like cancellation, error handling, and operators, while Promises represent a single future value without such features</em>
+<h2>Fetch vs HttpClient get</h2>
+<em>HttpClient in Angular offers built-in support for Observables whereas fetch/axios support for promises</em>
+
+<pre>
+    <code>
+  
+      const pro = new Promise((resolve) => {{"{"}}
+          setInterval(() => {{"{"}}
+              resolve('dog');
+              {{"}"}}, 100);
+          {{"}"}});
+  
+      pro.then((result) => {{"{"}}
+          console.log(result);
+          {{"}"}});
+    -------------------------------------------------------------------
+    Output : Dog (Single Http Response item)
+    -------------------------------------------------------------------
+      const obs = new Observable((observer) => {{"{"}}
+          setInterval(() => {{"{"}}
+              observer.next('dog'); // Emitting 'dog' to the observer
+              {{"}"}}, 100);
+          {{"}"}});
+  
+      obs.subscribe((result) => {{"{"}}
+          console.log(result);
+          {{"}"}});
+
+    -------------------------------------------------------------------
+          Output : Dog
+          Dog
+          Dog
+          .
+          .
+          .
+          Utill u unsubscribe
+          
+          (Multible Http Response Obsevable Item)
+    -------------------------------------------------------------------
+    </code>
+  </pre>
+  
